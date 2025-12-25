@@ -1,0 +1,28 @@
+Title: Isaac March, CSCI200OL.50710, Asteroid Survival
+Problem Description: 
+    For my project proposal I said I would make Galaga, however that game seemed to be too complex to create.
+    Instead I will be making my own game, Asteroid Survival which is simmilar and still substantial enough to be a final project. Instead 
+    of having to program an AI to govern enemies for Galaga, I will only have to move ememies accross the screen. This game will
+    keep track of user scores and display the high score and have three inputs, left, right, and attack. If the player colides with an attack the game will
+    end.
+Program Documentation:
+    How to run program. Program was developed on Windows.
+    All files in the zip folder are necesary. Once the folder is unziped and placed in VScode, enter the directory into the terminal and type 
+    mingw32-make to make the executables. Once these are created the program can be executed with the command ./FinalProject. The game prompt will 
+    ask for a user input and will show you how to play the game. If you want to quit you can hit the q or Q button or the "X" on the window bar. After the game
+    is over the command prompt will ask for you to enter your username (must have no spaces in the username). If you need to edit code you have to delete the 
+    FinalProject.exe and main.o before you rebuild with mingw32-make.
+LIST DATA STRUCTURE:
+    I chose to use functions, classes and structs to impliment the solution to my problem. These data structures alowed me to segment my code into readable 
+    sections and simplify my logic. Classes were helpful for encapsulating attributes and variables that were specific to a game object since each object 
+    behaves differently. For example the Player class had movement that was governed by player input and the Enemy class had movement that was governed 
+    by pre-set conditions. Classes alowed for a more simple and concice implimentation.
+TESTS: 
+    When the game starts it asks for user input to start the game in the form of s or S for start or q or Q to quit. This is handled in a while loop that 
+    can also detect an input other than these four cases. This program also takes in a file for socores. If the file or file directory does not exist, it 
+    ends the program with "File not found."
+REFLECTIONS: 
+    From this project I learned a lot about the proccess of incremental development and building large programs with interchangeable parts. This 
+    interchangeability can be done using functions to folow the WORM principal. Classes can also be used to deal with data types that might be useful to 
+    the project. One of the biggest problems I encountered was a bug that messed with my SFML directories that ended up breaking ALL my programs in VScode. 
+    I ended up fixing the problem by re-downloading the SFML libraries.
